@@ -2,7 +2,7 @@ package sda.algorithms.sorters;
 
 import sda.algorithms.data.DataSet;
 
-public class InsertionSorter implements SortingStrategy {
+public class InsertionSorting implements SortingStrategy {
 
     @Override
     public DataSet sort(DataSet data) {

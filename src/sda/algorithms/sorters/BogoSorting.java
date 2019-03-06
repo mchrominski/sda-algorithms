@@ -4,7 +4,7 @@ import sda.algorithms.data.DataSet;
 
 import java.util.Random;
 
-public class BogoSorter implements SortingStrategy {
+public class BogoSorting implements SortingStrategy {
 
     @Override
     public DataSet sort(DataSet data) {

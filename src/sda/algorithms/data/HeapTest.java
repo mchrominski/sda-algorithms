@@ -2,12 +2,12 @@ package sda.algorithms.data;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class HeapTest {
 
     @Test
-    public void test_parent(){
+    public void test_parent() {
         Heap heap = new Heap(null);
         assertEquals(0, heap.parent(1));
         assertEquals(0, heap.parent(2));

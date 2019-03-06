@@ -8,14 +8,14 @@ public class Heap extends DataSet {
         super(proxy);
 
         heapSize = proxy.getSize();
-        for(int i = proxy.getSize() - 1; i >= 0; i--) {
+        for (int i = proxy.getSize() - 1; i >= 0; i--) {
             heapify(i);
         }
 
     }
 
     public int parent(int i) {
-        return (int) (Math.ceil((double)i/2) -1);
+        return (int) (Math.ceil((double) i / 2) - 1);
     }
 
     public int left(int i) {
@@ -28,7 +28,7 @@ public class Heap extends DataSet {
 
     public void heapify(int i) {
         int left = left(i);
-        int right = right (i);
+        int right = right(i);
         int largest;
 
         if (left < heapSize && this.get(left) > this.get(i)) {

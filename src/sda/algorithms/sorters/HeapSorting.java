@@ -2,13 +2,12 @@ package sda.algorithms.sorters;
 
 import sda.algorithms.data.DataSet;
 import sda.algorithms.data.Heap;
-import sda.algorithms.sorters.SortingStrategy;
 
-public class HeapSorter implements SortingStrategy {
+public class HeapSorting implements SortingStrategy {
 
     private final Heap heap;
 
-    public HeapSorter(Heap heap) {
+    public HeapSorting(Heap heap) {
         this.heap = heap;
     }
 

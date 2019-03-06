@@ -15,7 +15,7 @@ public class Randomizer {
     }
 
     public DataSet generateStatic() {
-        int[] input = new int[] {4,1,3,2,16,9,10,14,8,7};
+        int[] input = new int[]{4, 1, 3, 2, 16, 9, 10, 14, 8, 7};
         DataSet data = new DataSet(input.length);
         int index = 0;
         for (int i : input) {

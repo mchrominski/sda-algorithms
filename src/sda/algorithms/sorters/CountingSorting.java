@@ -1,13 +1,12 @@
 package sda.algorithms.sorters;
 
 import sda.algorithms.data.DataSet;
-import sda.algorithms.data.Heap;
 
-public class CountingSorter implements SortingStrategy {
+public class CountingSorting implements SortingStrategy {
 
     private int[] counter;
 
-    public CountingSorter(int cap) {
+    public CountingSorting(int cap) {
         counter = new int[cap];
     }
 

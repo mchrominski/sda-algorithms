@@ -1,9 +1,8 @@
-package sda.algorithms;
+package sda.algorithms.sorters;
 
 import sda.algorithms.data.DataSet;
-import sda.algorithms.sorters.SortingStrategy;
 
-public class QuickSorter implements SortingStrategy {
+public class QuickSorting implements SortingStrategy {
 
 
     @Override

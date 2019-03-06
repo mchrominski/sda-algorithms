@@ -2,14 +2,8 @@ package sda.algorithms.sorters;
 
 import sda.algorithms.data.DataSet;
 
-public class MergeSorter implements SortingStrategy {
+public class MergeSorting implements SortingStrategy {
 
-
-    @Override
-    public DataSet sort(DataSet data) {
-        mergeSort(data.getRawData(), data.getSize());
-        return data;
-    }
 
     public static void mergeSort(int[] a, int n) {
         if (n < 2) {
@@ -47,5 +41,11 @@ public class MergeSorter implements SortingStrategy {
         while (j < right) {
             a[k++] = r[j++];
         }
+    }
+
+    @Override
+    public DataSet sort(DataSet data) {
+        mergeSort(data.getRawData(), data.getSize());
+        return data;
     }
 }

@@ -2,7 +2,7 @@ package sda.algorithms.sorters;
 
 import sda.algorithms.data.DataSet;
 
-public class BubbleSorter implements SortingStrategy {
+public class BubbleSorting implements SortingStrategy {
 
     @Override
     public DataSet sort(DataSet data) {
