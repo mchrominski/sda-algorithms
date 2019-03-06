@@ -4,10 +4,14 @@ import java.util.Arrays;
 
 public class DataSet {
 
-    int[] data;
+    private int[] data;
 
     public DataSet(int n) {
         data = new int[n];
+    }
+
+    public DataSet(DataSet proxy) {
+        this.data = proxy.data;
     }
 
     public void set(int i, int value) {
@@ -24,5 +28,16 @@ public class DataSet {
 
     public int get(int i) {
         return data[i];
+    }
+
+    public void swap(int j, int i) {
+        int tmp = data[j];
+        data[j] = data[i];
+        data[i] = tmp;
+    }
+
+    // unsafe as exposes internal implementation
+    public int[] getRawData() {
+        return data;
     }
 }

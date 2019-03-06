@@ -14,6 +14,17 @@ public class Randomizer {
         return generate(10);
     }
 
+    public DataSet generateStatic() {
+        int[] input = new int[] {4,1,3,2,16,9,10,14,8,7};
+        DataSet data = new DataSet(input.length);
+        int index = 0;
+        for (int i : input) {
+            data.set(index, input[index]);
+            index++;
+        }
+        return data;
+    }
+
     public DataSet generate(int n) {
         DataSet data = new DataSet(n);
 

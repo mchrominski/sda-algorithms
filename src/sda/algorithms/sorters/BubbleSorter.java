@@ -12,9 +12,8 @@ public class BubbleSorter implements SortingStrategy {
                 int v1 = data.get(i);
                 int v2 = data.get(j);
 
-                if (v1 > v2) {
-                    data.set(i, v2);
-                    data.set(j, v1);
+                if (data.get(i) > data.get(j)) {
+                    data.swap(i, j);
                 }
             }
         }
